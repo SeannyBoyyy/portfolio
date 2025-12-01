@@ -6,7 +6,21 @@ import { useState } from 'react'
 function Header() {
   const { isDark, toggleTheme } = useTheme()
   const [isHovered, setIsHovered] = useState(false)
+  const [isClicked, setIsClicked] = useState(false)
   const base = import.meta.env.BASE_URL
+
+  // Determine which image to show: clicked > hovered > normal
+  const getProfileImage = () => {
+    if (isClicked) return `${base}projects/2x2-click.png`
+    if (isHovered) return `${base}projects/2x2-shy.png`
+    return `${base}projects/2x2-pic.png`
+  }
+
+  const handleClick = () => {
+    setIsClicked(true)
+    // Reset after a short delay
+    setTimeout(() => setIsClicked(false), 500)
+  }
 
   return (
     <motion.div 
@@ -31,6 +45,7 @@ function Header() {
             }`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            onClick={handleClick}
           >
             {/* Office with Glass Wall Background */}
             <div className={`absolute inset-0 ${isDark ? 'bg-zinc-900' : 'bg-slate-100'}`}>
@@ -106,7 +121,7 @@ function Header() {
             </div>
             
             <img 
-              src={isHovered ? `${base}projects/2x2-shy.png` : `${base}projects/2x2-pic.png`}
+              src={getProfileImage()}
               alt="Sean Richard Sakamoto"
               className="relative w-full h-full object-cover transition-all duration-300"
             />

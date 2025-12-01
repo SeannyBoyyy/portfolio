@@ -16,7 +16,7 @@ function Footer() {
   const socialLinks = [
     { icon: FaGithub, href: 'https://github.com/SeannyBoyyy', label: 'GitHub' },
     { icon: FaLinkedin, href: '#', label: 'LinkedIn' },
-    { icon: FaEnvelope, href: 'mailto:seanrichard1022@gmail.com', label: 'Email' },
+    { icon: FaEnvelope, href: 'mailto:seamdesagun@gmail.com', label: 'Email' },
   ]
 
   return (
@@ -77,7 +77,7 @@ function Footer() {
               ))}
             </div>
             <p className={`mt-4 text-sm ${isDark ? 'text-gray-500' : 'text-gray-500'}`}>
-              seanrichard1022@gmail.com
+              seamdesagun@gmail.com
             </p>
           </div>
         </div>

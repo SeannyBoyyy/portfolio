@@ -41,7 +41,7 @@ function Sidebar() {
         {/* Links */}
         <div className="mt-6 space-y-2">
           <a
-            href="mailto:seanrichard1022@gmail.com"
+            href="mailto:seamdesagun@gmail.com"
             className={`flex items-center justify-center gap-2 w-full py-2.5 rounded-lg text-sm font-medium transition-colors ${
               isDark 
                 ? 'bg-white text-black hover:bg-gray-200' 

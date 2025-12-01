@@ -1,13 +1,12 @@
 import { useTheme } from '../context/ThemeContext'
-import { FiMail, FiPhone, FiGithub, FiLinkedin } from 'react-icons/fi'
+import { FiMail, FiGithub, FiLinkedin } from 'react-icons/fi'
 import { motion } from 'framer-motion'
 
 function Contact() {
   const { isDark } = useTheme()
 
   const links = [
-    { icon: FiMail, label: 'Email', value: 'seanrichard1022@gmail.com', href: 'mailto:seanrichard1022@gmail.com' },
-    { icon: FiPhone, label: 'Phone', value: '0917 102 5899', href: 'tel:09171025899' },
+    { icon: FiMail, label: 'Email', value: 'seamdesagun@gmail.com', href: 'mailto:seamdesagun@gmail.com' },
   ]
 
   const socials = [
@@ -17,7 +16,7 @@ function Contact() {
 
   return (
     <motion.div 
-      className={`card ${isDark ? 'card-dark' : 'card-light'}`}
+      className={`card h-full ${isDark ? 'card-dark' : 'card-light'}`}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.6 }}

@@ -15,7 +15,7 @@ function Skills() {
     },
     {
       title: 'Tools',
-      skills: ['Git', 'Figma']
+      skills: ['Git', 'Figma', 'Expo Go']
     },
   ]
 

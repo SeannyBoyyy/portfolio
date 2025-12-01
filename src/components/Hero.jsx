@@ -51,7 +51,7 @@ function Hero() {
       {/* Quick links */}
       <div className="flex flex-wrap gap-3 mt-6">
         <a 
-          href="mailto:seanrichard1022@gmail.com"
+          href="mailto:seamdesagun@gmail.com"
           className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
             isDark 
               ? 'bg-white text-black hover:bg-gray-200' 

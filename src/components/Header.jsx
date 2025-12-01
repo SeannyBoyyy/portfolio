@@ -44,19 +44,34 @@ function Header() {
               </motion.div>
             </div>
             
-            {/* Theme Toggle */}
-            <motion.button
-              onClick={toggleTheme}
-              className={`p-2 rounded-xl transition-colors ${
-                isDark 
-                  ? 'bg-zinc-800 text-zinc-400 hover:text-white' 
-                  : 'bg-gray-100 text-gray-500 hover:text-gray-900'
+            {/* Theme Toggle Switch */}
+            <motion.div
+              className={`relative w-14 h-7 rounded-full cursor-pointer transition-colors ${
+                isDark ? 'bg-zinc-700' : 'bg-gray-200'
               }`}
-              whileHover={{ scale: 1.1 }}
+              onClick={toggleTheme}
               whileTap={{ scale: 0.95 }}
             >
-              {isDark ? <FiSun className="w-4 h-4" /> : <FiMoon className="w-4 h-4" />}
-            </motion.button>
+              {/* Switch Track Icons */}
+              <div className="absolute inset-0 flex items-center justify-between px-1.5">
+                <FiMoon className={`w-3.5 h-3.5 transition-colors ${isDark ? 'text-zinc-500' : 'text-gray-400'}`} />
+                <FiSun className={`w-3.5 h-3.5 transition-colors ${isDark ? 'text-yellow-400' : 'text-gray-400'}`} />
+              </div>
+              {/* Switch Knob */}
+              <motion.div
+                className={`absolute top-0.5 w-6 h-6 rounded-full shadow-md flex items-center justify-center ${
+                  isDark ? 'bg-zinc-900' : 'bg-white'
+                }`}
+                animate={{ x: isDark ? 28 : 2 }}
+                transition={{ type: 'spring', stiffness: 500, damping: 30 }}
+              >
+                {isDark ? (
+                  <FiSun className="w-3.5 h-3.5 text-yellow-400" />
+                ) : (
+                  <FiMoon className="w-3.5 h-3.5 text-gray-600" />
+                )}
+              </motion.div>
+            </motion.div>
           </div>
 
           {/* Action Buttons */}
@@ -67,7 +82,7 @@ function Header() {
             transition={{ duration: 0.5, delay: 0.5 }}
           >
             <motion.a
-              href="mailto:seanrichard1022@gmail.com"
+              href="mailto:seamdesagun@gmail.com"
               className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-medium rounded-xl transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

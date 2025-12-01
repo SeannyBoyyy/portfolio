@@ -23,17 +23,21 @@ function App() {
         {/* Main Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-6">
           {/* Left Column */}
-          <div className="lg:col-span-2 space-y-4">
+          <div className="lg:col-span-2 flex flex-col gap-4">
             <About />
             <Skills />
-            <Projects />
+            <div className="flex-1">
+              <Projects />
+            </div>
           </div>
           
           {/* Right Column */}
-          <div className="space-y-4">
+          <div className="flex flex-col gap-4">
             <Experience />
             <Seminars />
-            <Contact />
+            <div className="flex-1">
+              <Contact />
+            </div>
           </div>
         </div>
         

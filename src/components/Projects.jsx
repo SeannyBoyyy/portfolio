@@ -10,19 +10,19 @@ function Projects() {
       title: 'CraveSense',
       description: 'AI-powered food discovery app',
       link: 'https://seannyboyyy.github.io/CraveSense/',
-      image: '/projects/cravesense.png',
+      image: import.meta.env.BASE_URL + 'projects/cravesense.png',
     },
     {
       title: 'MLBB Studies',
       description: 'Gaming analytics platform',
       link: 'https://mlbb-studies.great-site.net',
-      image: '/projects/mlbb-studies.png',
+      image: import.meta.env.BASE_URL + 'projects/mlbb-studies.png',
     },
     {
       title: 'LSB WebProj',
       description: 'LSB ads promotional website',
       link: 'https://lsb-webproj.great-site.net',
-      image: '/projects/lsb-webproj.png',
+      image: import.meta.env.BASE_URL + 'projects/lsb-webproj.png',
     },
   ]
 

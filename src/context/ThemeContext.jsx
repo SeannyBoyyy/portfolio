@@ -2,11 +2,24 @@ import { createContext, useContext, useState, useEffect } from 'react'
 
 const ThemeContext = createContext()
 
-export function ThemeProvider({ children }) {
-  const [isDark, setIsDark] = useState(() => {
+// Initialize theme immediately to prevent flash
+const getInitialTheme = () => {
+  if (typeof window !== 'undefined') {
     const saved = localStorage.getItem('theme')
-    return saved ? saved === 'dark' : true
-  })
+    const isDark = saved ? saved === 'dark' : false
+    // Apply dark class immediately
+    if (isDark) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+    return isDark
+  }
+  return false
+}
+
+export function ThemeProvider({ children }) {
+  const [isDark, setIsDark] = useState(getInitialTheme)
 
   useEffect(() => {
     localStorage.setItem('theme', isDark ? 'dark' : 'light')

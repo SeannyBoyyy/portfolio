@@ -34,7 +34,7 @@ function Navbar() {
               }`}
               aria-label="Toggle theme"
             >
-              {isDark ? <FiSun className="w-4 h-4" /> : <FiMoon className="w-4 h-4" />}
+              {isDark ? <FiMoon className="w-4 h-4" /> : <FiSun className="w-4 h-4" />}
             </button>
           </div>
         </div>

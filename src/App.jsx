@@ -5,6 +5,7 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Seminars from './components/Seminars'
 import Contact from './components/Contact'
+import ParticleBackground from './components/ParticleBackground'
 import { useTheme } from './context/ThemeContext'
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
         ? 'bg-[#111111] text-white' 
         : 'bg-[#f5f5f5] text-gray-900'
     }`}>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+      <ParticleBackground />
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-8">
         {/* Header/Profile Section */}
         <Header />
         

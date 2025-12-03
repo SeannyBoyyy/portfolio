@@ -4,25 +4,26 @@ import { motion } from 'framer-motion'
 
 function Projects() {
   const { isDark } = useTheme()
+  const base = import.meta.env.BASE_URL
 
   const projects = [
     {
       title: 'CraveSense',
       description: 'AI-powered food discovery app',
       link: 'https://seannyboyyy.github.io/CraveSense/',
-      image: import.meta.env.BASE_URL + 'projects/cravesense.png',
+      image: `${base}projects/cravesense.png`,
     },
     {
       title: 'MLBB Studies',
       description: 'Gaming analytics platform',
       link: 'https://mlbb-studies.great-site.net',
-      image: import.meta.env.BASE_URL + 'projects/mlbb-studies.png',
+      image: `${base}projects/mlbb-studies.png`,
     },
     {
       title: 'LSB WebProj',
       description: 'LSB ads promotional website',
       link: 'https://lsb-webproj.great-site.net',
-      image: import.meta.env.BASE_URL + 'projects/lsb-webproj.png',
+      image: `${base}projects/lsb-webproj.png`,
     },
   ]
 

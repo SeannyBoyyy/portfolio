@@ -10,6 +10,13 @@ function Projects() {
 
   const projects = [
     {
+      title: 'FitFusion360',
+      description: 'Personalized fitness app',
+      link: 'https://danmikel1.github.io/capstoneLandingPage/',
+      image: `${base}projects/fitfusion360.png`,
+      year: '2026',
+    },
+    {
       title: 'Hotel Minima Booking',
       description: 'Hotel reservation and booking system',
       link: 'https://hotel-minima-booking.vercel.app/',

@@ -11,45 +11,51 @@ function Projects() {
   const projects = [
     {
       title: 'FitFusion360',
-      description: 'Personalized fitness app',
-      link: 'https://danmikel1.github.io/capstoneLandingPage/',
+      description: 'AI-powered fitness & nutrition app with Gemini AI meal plans, food vision recognition, personalized 28-day workouts, and clinical-grade nutrition algorithms. Backed by 12+ peer-reviewed studies.',
+      link: 'https://fitfusion360.online/',
       image: `${base}projects/fitfusion360.png`,
       year: '2026',
+      tech: ['React Native', 'Expo Go', 'Firebase'],
     },
     {
       title: 'Hotel Minima Booking',
-      description: 'Hotel reservation and booking system',
+      description: 'Japanese minimalist hotel booking system with real-time availability, PayMongo payments, AI chatbot assistant, receptionist dashboard, and walk-in booking support.',
       link: 'https://hotel-minima-booking.vercel.app/',
       image: `${base}projects/hotel-minima.png`,
       year: '2026',
+      tech: ['Next.js', 'React', 'Firebase', 'Tailwind CSS', 'PayMongo'],
     },
     {
       title: 'Instant Pick',
-      description: 'Spin-the-wheel web app',
+      description: 'Professional spin-the-wheel app for events and giveaways. Features 6 color themes, dark mode, sound effects, confetti, winner history, and PWA offline support.',
       link: 'https://seannyboyyy.github.io/instantpick/',
       image: `${base}projects/instantpick.png`,
       year: '2025',
+      tech: ['React', 'Vite', 'Tailwind CSS', 'PWA'],
     },
     {
       title: 'CraveSense',
-      description: 'AI-powered food discovery app',
+      description: 'Mood-based food discovery app. Pick your mood (stressed, happy, tired, excited) and get personalized recipe recommendations from 500+ dishes with AI chat support.',
       link: 'https://seannyboyyy.github.io/CraveSense/',
       image: `${base}projects/cravesense.png`,
       year: '2025',
+      tech: ['React Native', 'Expo Go', 'Firebase'],
     },
     {
       title: 'MLBB Studies',
-      description: 'Gaming analytics platform',
+      description: 'Gaming analytics platform for Mobile Legends with team draft analysis, hero statistics, meta insights, and build recommendations.',
       link: 'https://mlbb-studies.great-site.net',
       image: `${base}projects/mlbb-studies.png`,
       year: '2025',
+      tech: ['PHP', 'Bootstrap', 'MySQL', 'Chart.js'],
     },
     {
       title: 'LSB WebProj',
-      description: 'LSB ads promotional website',
+      description: 'Promotional website for Lyceum of Subic Bay with dynamic content management and event announcements.',
       link: 'https://lsb-webproj.great-site.net',
       image: `${base}projects/lsb-webproj.png`,
       year: '2024',
+      tech: ['PHP', 'Bootstrap', 'MySQL'],
     },
   ]
 
@@ -133,13 +139,14 @@ function Projects() {
               <div className="p-3">
                 <div className="flex items-start justify-between gap-2">
                   <div className="flex-1 min-w-0">
-                    <h3 className={`font-medium text-sm truncate ${isDark ? 'text-white' : 'text-gray-900'}`}>
+                    <h3 className={`font-medium text-sm ${isDark ? 'text-white' : 'text-gray-900'}`}>
                       {project.title}
                     </h3>
-                    <p className={`text-xs mt-0.5 line-clamp-1 ${isDark ? 'text-zinc-400' : 'text-gray-500'}`}>
+                    <p className={`text-xs mt-1 leading-relaxed ${isDark ? 'text-zinc-400' : 'text-gray-500'}`}>
                       {project.description}
                     </p>
                   </div>
+                  {/* Visit Link Button */}
                   <div className={`flex-shrink-0 p-1.5 rounded-full transition-all duration-300 group-hover:scale-110 ${
                     isDark 
                       ? 'bg-zinc-700 group-hover:bg-zinc-600' 
@@ -149,6 +156,22 @@ function Projects() {
                       isDark ? 'text-zinc-300' : 'text-gray-600'
                     }`} />
                   </div>
+                </div>
+
+                {/* Tech Stack - Always Visible */}
+                <div className="flex flex-wrap gap-1.5 mt-2">
+                  {project.tech.map((tech) => (
+                    <span
+                      key={tech}
+                      className={`px-2 py-0.5 text-[10px] font-medium rounded-md ${
+                        isDark 
+                          ? 'bg-zinc-700 text-zinc-300 border border-zinc-600' 
+                          : 'bg-gray-100 text-gray-600 border border-gray-200'
+                      }`}
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
               </div>
             </motion.a>

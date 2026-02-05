@@ -1,5 +1,5 @@
 import { useTheme } from '../context/ThemeContext'
-import { FiArrowUpRight, FiSun, FiMoon } from 'react-icons/fi'
+import { FiArrowUpRight, FiSun, FiMoon, FiDownload } from 'react-icons/fi'
 
 function Hero() {
   const { isDark, toggleTheme } = useTheme()
@@ -71,6 +71,18 @@ function Hero() {
           }`}
         >
           GitHub <FiArrowUpRight className="w-3.5 h-3.5" />
+        </a>
+        <a 
+          href="/cv.pdf" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+            isDark 
+              ? 'bg-zinc-800 text-white hover:bg-zinc-700' 
+              : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
+          }`}
+        >
+          View CV <FiArrowUpRight className="w-3.5 h-3.5" />
         </a>
       </div>
 

@@ -1,5 +1,5 @@
 import { useTheme } from '../context/ThemeContext'
-import { FiSun, FiMoon, FiMail, FiGithub, FiMapPin } from 'react-icons/fi'
+import { FiSun, FiMoon, FiMail, FiGithub, FiMapPin, FiFileText } from 'react-icons/fi'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 
@@ -138,7 +138,7 @@ function Header() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                Sean Richard Sakamoto
+                Sean Richard D. Sakamoto
               </motion.h1>
               <motion.p 
                 className={`text-sm mt-0.5 ${isDark ? 'text-zinc-300' : 'text-gray-600'}`}
@@ -219,6 +219,21 @@ function Header() {
             >
               <FiGithub className="w-4 h-4" />
               GitHub
+            </motion.a>
+            <motion.a
+              href={`${base}SakamotoSR_CV.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-xl transition-colors ${
+                isDark 
+                  ? 'bg-zinc-800 text-white hover:bg-zinc-700' 
+                  : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
+              }`}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <FiFileText className="w-4 h-4" />
+              View Full CV
             </motion.a>
           </motion.div>
         </div>

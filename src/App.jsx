@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import About from './components/About'
 import Experience from './components/Experience'
+import WorkExperience from './components/WorkExperience'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Seminars from './components/Seminars'
@@ -35,6 +36,7 @@ function App() {
           
           {/* Right Column */}
           <div className="flex flex-col gap-4">
+            <WorkExperience />
             <Experience />
             <Seminars />
             <div className="flex-1">

@@ -6,15 +6,16 @@ function WorkExperience() {
 
   const experiences = [
     {
-      title: 'On-the-Job Training (OJT)',
-      company: 'Tailin Abrasives Corporation', // Update with your OJT company
-      period: '2025 - 2026',
+      title: 'AI & IT Programmer Intern',
+      company: 'Tailin Abrasives Corporation',
+      period: 'Nov 2025 — Mar 2026',
       hours: '486 Hours',
       current: true,
       description: [
-        'Developed an AI-driven employee orientation to guide new hires, reducing manual onboarding effort and saving employee hours.',
-        'Designed and implemented a customizable “Spin-the-Wheel” system to efficiently select multiple winners per spin, significantly reducing time spent on manual one-by-one selection.',
-        'Created a process optimization solution using Microsoft Excel, leveraging advanced formulas to simplify workflows and improve processing speed and accuracy.',
+        'Designed and deployed 5 AI-generated video orientations across different departments, reducing onboarding time from 1-2 hours down to 15–45 minutes per session, cutting orientation delivery time by up to 75%.',
+        'Developed a custom automated multi-selection tool for company-wide events, capable of randomly selecting custom winners per cycle with a single action, replacing a manual process and now adopted as the standard tool for all corporate events.',
+        'Created a process optimization solution using Microsoft Excel with advanced formulas, reducing per-task processing time from 9:49 minutes to 4:41 minutes (52% faster) and cutting total daily workload from 6-7 hours down to 3-4 hours, saving approximately 3 hours per day.',
+        'Built TAC Ledger, a full-featured General Ledger system handling dual-currency (PHP/USD) bookkeeping, journal entries, Excel import/export, trial balance, subledger tracking, and team collaboration — built with Next.js, TypeScript, PostgreSQL, and Prisma.',
       ],
     },
   ]
@@ -32,7 +33,7 @@ function WorkExperience() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4, delay: 0.4 }}
       >
-        <span className="text-xl">💼</span> Work Experience
+        <span className="text-xl">💼</span> Experience
       </motion.h2>
       
       <div className="space-y-4">

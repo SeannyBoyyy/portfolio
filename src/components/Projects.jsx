@@ -76,7 +76,7 @@ function Projects() {
         transition={{ duration: 0.4, delay: 0.4 }}
       >
         <h2 className={`text-lg font-semibold flex items-center gap-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
-          <span className="text-xl">🎓</span> Academic Projects
+          <span className="text-xl">💻</span> Academic Projects
         </h2>
         <span className={`text-xs px-2 py-1 rounded-full ${
           isDark ? 'bg-zinc-700 text-zinc-300' : 'bg-gray-100 text-gray-600'

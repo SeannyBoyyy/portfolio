@@ -13,7 +13,6 @@ function WorkExperience() {
       current: true,
       description: [
         'Designed and deployed 5 AI-generated video orientations across different departments, reducing onboarding time from 1-2 hours down to 15–45 minutes per session, cutting orientation delivery time by up to 75%.',
-        'Developed a custom automated multi-selection tool for company-wide events, capable of randomly selecting custom winners per cycle with a single action, replacing a manual process and now adopted as the standard tool for all corporate events.',
         'Created a process optimization solution using Microsoft Excel with advanced formulas, reducing per-task processing time from 9:49 minutes to 4:41 minutes (52% faster) and cutting total daily workload from 6-7 hours down to 3-4 hours, saving approximately 3 hours per day.',
         'Built TAC Ledger, a full-featured General Ledger system handling dual-currency (PHP/USD) bookkeeping, journal entries, Excel import/export, trial balance, subledger tracking, and team collaboration — built with Next.js, TypeScript, PostgreSQL, and Prisma.',
       ],

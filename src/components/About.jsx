@@ -27,10 +27,10 @@ function About() {
         transition={{ duration: 0.5, delay: 0.3 }}
       >
         <p>
-          I am a 4th-year BS Information Technology student passionate about applying my skills and 
-          knowledge to real-world projects. I enjoy solving problems, experimenting with new technologies, and 
-          continuously learning. I work best in collaborative settings and I am always eager to take on challenges 
-          that will help me grow both professionally and personally.
+          I am a fresh BS Information Technology graduate with hands-on experience building real-world web and
+          software projects. I enjoy solving problems, learning modern technologies, and turning ideas into practical,
+          user-friendly solutions. I am currently seeking an entry-level opportunity where I can contribute to a team,
+          grow as a developer, and continue improving through meaningful projects and collaboration.
         </p>
       </motion.div>
     </motion.div>

@@ -25,7 +25,7 @@ function Hero() {
           <p className={`mt-2 text-lg ${
             isDark ? 'text-zinc-400' : 'text-gray-600'
           }`}>
-            Full Stack Developer • Student
+            Full Stack Developer • Fresh Graduate
           </p>
           <p className={`mt-1 text-sm ${
             isDark ? 'text-zinc-500' : 'text-gray-500'

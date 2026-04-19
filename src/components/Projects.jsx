@@ -12,7 +12,7 @@ function Projects() {
     {
       title: 'FitFusion360',
       description: 'AI-powered fitness & nutrition app with Gemini AI meal plans, food vision recognition, personalized 28-day workouts, and clinical-grade nutrition algorithms. Backed by 12+ peer-reviewed studies.',
-      link: 'https://fitfusion360.online/',
+      link: 'https://danmikel1.github.io/capstoneLandingPage/',
       image: `${base}projects/fitfusion360.png`,
       year: '2026',
       tech: ['React Native', 'Expo Go', 'Firebase'],
@@ -76,7 +76,7 @@ function Projects() {
         transition={{ duration: 0.4, delay: 0.4 }}
       >
         <h2 className={`text-lg font-semibold flex items-center gap-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
-          <span className="text-xl">💻</span> Academic Projects
+          <span className="text-xl">💻</span> Projects
         </h2>
         <span className={`text-xs px-2 py-1 rounded-full ${
           isDark ? 'bg-zinc-700 text-zinc-300' : 'bg-gray-100 text-gray-600'

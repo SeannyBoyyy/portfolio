@@ -146,7 +146,7 @@ function Header() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                Full Stack Developer • Student
+                Full Stack Developer • Fresh Graduate
               </motion.p>
               <motion.div 
                 className={`flex items-center gap-1.5 mt-1.5 text-xs ${isDark ? 'text-zinc-400' : 'text-gray-500'}`}

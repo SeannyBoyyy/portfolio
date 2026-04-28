@@ -11,7 +11,7 @@ function Contact() {
 
   const socials = [
     { icon: FiGithub, href: 'https://github.com/SeannyBoyyy', label: 'GitHub' },
-    { icon: FiLinkedin, href: '#', label: 'LinkedIn' },
+    { icon: FiLinkedin, href: 'https://www.linkedin.com/in/sean-richard-sakamoto-51b568404', label: 'LinkedIn' },
   ]
 
   return (

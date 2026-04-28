@@ -233,7 +233,7 @@ function Header() {
               whileTap={{ scale: 0.95 }}
             >
               <FiFileText className="w-4 h-4" />
-              View Full CV
+              View Full Resume
             </motion.a>
           </motion.div>
         </div>

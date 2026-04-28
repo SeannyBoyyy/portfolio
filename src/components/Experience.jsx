@@ -8,7 +8,7 @@ function Experience() {
     {
       title: 'BS Information Technology',
       place: 'Lyceum of Subic Bay',
-      period: '2022 — Present',
+      period: '2022 — 2026',
       current: true,
     },
     {

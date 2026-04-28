@@ -12,7 +12,7 @@ function Projects() {
     {
       title: 'FitFusion360',
       description: 'AI-powered fitness & nutrition app with Gemini AI meal plans, food vision recognition, personalized 28-day workouts, and clinical-grade nutrition algorithms. Backed by 12+ peer-reviewed studies.',
-      link: 'https://danmikel1.github.io/capstoneLandingPage/',
+      link: 'https://seannyboyyy.github.io/FitFusion360/',
       image: `${base}projects/fitfusion360.png`,
       year: '2026',
       tech: ['React Native', 'Expo Go', 'Firebase'],

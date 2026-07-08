@@ -197,7 +197,7 @@ function Header() {
             transition={{ duration: 0.5, delay: 0.5 }}
           >
             <motion.a
-              href="mailto:seamdesagun@gmail.com"
+              href="mailto:seanrichard1022@gmail.com"
               className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-medium rounded-xl transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

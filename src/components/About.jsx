@@ -1,5 +1,6 @@
 import { useTheme } from '../context/ThemeContext'
 import { motion } from 'framer-motion'
+import { FiUser } from 'react-icons/fi'
 
 function About() {
   const { isDark } = useTheme()
@@ -17,7 +18,7 @@ function About() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4, delay: 0.2 }}
       >
-        <span className="text-xl">👋</span> About
+        <FiUser className="w-4 h-4" /> About
       </motion.h2>
       
       <motion.div 
@@ -27,10 +28,11 @@ function About() {
         transition={{ duration: 0.5, delay: 0.3 }}
       >
         <p>
-          I am a fresh BS Information Technology graduate with hands-on experience building real-world web and
-          software projects. I enjoy solving problems, learning modern technologies, and turning ideas into practical,
-          user-friendly solutions. I am currently seeking an entry-level opportunity where I can contribute to a team,
-          grow as a developer, and continue improving through meaningful projects and collaboration.
+          I'm a BS Information Technology graduate (Lyceum of Subic Bay, April 2026) with a habit of shipping things
+          instead of just prototyping them. Everything on this page is live and actually used, not a coursework
+          demo. I like finding the slow, manual part of a workflow and rebuilding it to be faster, usually with AI
+          worked in as a tool rather than a gimmick. Right now I'm looking for an entry-level role where I can keep
+          doing that on a team.
         </p>
       </motion.div>
     </motion.div>

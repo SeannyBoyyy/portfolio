@@ -1,5 +1,6 @@
 import { useTheme } from '../context/ThemeContext'
 import { motion } from 'framer-motion'
+import { FiBriefcase } from 'react-icons/fi'
 
 function WorkExperience() {
   const { isDark } = useTheme()
@@ -10,11 +11,24 @@ function WorkExperience() {
       company: 'Tailin Abrasives Corporation',
       period: 'Nov 2025 — Mar 2026',
       hours: '486 Hours',
-      current: true,
       description: [
-        'Designed and deployed 5 AI-generated video orientations across different departments, reducing onboarding time from 1-2 hours down to 15–45 minutes per session, cutting orientation delivery time by up to 75%.',
-        'Created a process optimization solution using Microsoft Excel with advanced formulas, reducing per-task processing time from 9:49 minutes to 4:41 minutes (52% faster) and cutting total daily workload from 6-7 hours down to 3-4 hours, saving approximately 3 hours per day.',
-        'Built TAC Ledger, a full-featured General Ledger system handling dual-currency (PHP/USD) bookkeeping, journal entries, Excel import/export, trial balance, subledger tracking, and team collaboration — built with Next.js, TypeScript, PostgreSQL, and Prisma.',
+        [
+          'Designed and deployed 5 AI-generated video orientations across different departments, reducing onboarding time from 1-2 hours down to 15–45 minutes per session, cutting orientation delivery time by up to ',
+          { bold: '75%' },
+          '.',
+        ],
+        [
+          'Created a process optimization solution using Microsoft Excel with advanced formulas, reducing per-task processing time from 9:49 minutes to 4:41 minutes (',
+          { bold: '52% faster' },
+          '), saving approximately ',
+          { bold: '3 hours per day' },
+          ' off the total daily workload.',
+        ],
+        [
+          'Built ',
+          { bold: 'TAC Ledger' },
+          ', a full-featured General Ledger system handling dual-currency (PHP/USD) bookkeeping, journal entries, Excel import/export, trial balance, subledger tracking, and team collaboration. Built with Next.js, TypeScript, PostgreSQL, and Prisma.',
+        ],
       ],
     },
   ]
@@ -32,7 +46,7 @@ function WorkExperience() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4, delay: 0.4 }}
       >
-        <span className="text-xl">💼</span> Experience
+        <FiBriefcase className="w-4 h-4" /> Experience
       </motion.h2>
       
       <div className="space-y-4">
@@ -82,11 +96,26 @@ function WorkExperience() {
                 {exp.period}
               </span>
               {exp.description && (
-                <ul className={`mt-2 space-y-1 text-xs ${isDark ? 'text-zinc-400' : 'text-gray-500'}`}>
+                <ul className={`mt-2 space-y-1.5 text-xs leading-relaxed ${isDark ? 'text-zinc-400' : 'text-gray-500'}`}>
                   {exp.description.map((item, i) => (
                     <li key={i} className="flex items-start gap-1.5">
                       <span className="mt-1.5 w-1 h-1 rounded-full bg-current flex-shrink-0"></span>
-                      {item}
+                      <span>
+                        {Array.isArray(item)
+                          ? item.map((segment, j) =>
+                              typeof segment === 'string' ? (
+                                <span key={j}>{segment}</span>
+                              ) : (
+                                <strong
+                                  key={j}
+                                  className={`font-semibold ${isDark ? 'text-white' : 'text-gray-900'}`}
+                                >
+                                  {segment.bold}
+                                </strong>
+                              )
+                            )
+                          : item}
+                      </span>
                     </li>
                   ))}
                 </ul>

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useTheme } from '../context/ThemeContext'
-import { FiArrowUpRight, FiChevronDown, FiChevronUp, FiCalendar } from 'react-icons/fi'
+import { FiArrowUpRight, FiChevronDown, FiChevronUp, FiCalendar, FiCode } from 'react-icons/fi'
 import { motion, AnimatePresence } from 'framer-motion'
 
 function Projects() {
@@ -76,7 +76,7 @@ function Projects() {
         transition={{ duration: 0.4, delay: 0.4 }}
       >
         <h2 className={`text-lg font-semibold flex items-center gap-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>
-          <span className="text-xl">💻</span> Projects
+          <FiCode className="w-4 h-4" /> Projects
         </h2>
         <span className={`text-xs px-2 py-1 rounded-full ${
           isDark ? 'bg-zinc-700 text-zinc-300' : 'bg-gray-100 text-gray-600'

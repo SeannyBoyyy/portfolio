@@ -50,7 +50,7 @@ function App() {
           isDark ? 'border-zinc-800' : 'border-gray-200'
         }`}>
           <p className={`text-xs ${isDark ? 'text-zinc-400' : 'text-gray-400'}`}>
-            © 2025 Sean Richard Sakamoto. All rights reserved.
+            © {new Date().getFullYear()} Sean Richard Sakamoto. All rights reserved.
           </p>
         </footer>
       </div>

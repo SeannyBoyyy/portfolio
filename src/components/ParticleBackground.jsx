@@ -68,18 +68,20 @@ function ParticleBackground() {
       animationFrameId = requestAnimationFrame(drawParticles)
     }
 
+    const handleResize = () => {
+      resizeCanvas()
+      createParticles()
+    }
+
     resizeCanvas()
     createParticles()
     drawParticles()
 
-    window.addEventListener('resize', () => {
-      resizeCanvas()
-      createParticles()
-    })
+    window.addEventListener('resize', handleResize)
 
     return () => {
       cancelAnimationFrame(animationFrameId)
-      window.removeEventListener('resize', resizeCanvas)
+      window.removeEventListener('resize', handleResize)
     }
   }, [isDark])
 

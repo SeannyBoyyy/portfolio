@@ -1,5 +1,6 @@
 import { useTheme } from '../context/ThemeContext'
 import { motion } from 'framer-motion'
+import { FiBookOpen } from 'react-icons/fi'
 
 function Experience() {
   const { isDark } = useTheme()
@@ -9,7 +10,6 @@ function Experience() {
       title: 'BS Information Technology',
       place: 'Lyceum of Subic Bay',
       period: '2022 — 2026',
-      current: true,
     },
     {
       title: 'Senior High School - STEM',
@@ -31,7 +31,7 @@ function Experience() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4, delay: 0.5 }}
       >
-        <span className="text-xl">🎓</span> Education
+        <FiBookOpen className="w-4 h-4" /> Education
       </motion.h2>
       
       <div className="space-y-4">

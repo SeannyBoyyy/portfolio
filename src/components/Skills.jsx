@@ -1,5 +1,6 @@
 import { useTheme } from '../context/ThemeContext'
 import { motion } from 'framer-motion'
+import { FiZap } from 'react-icons/fi'
 
 function Skills() {
   const { isDark } = useTheme()
@@ -7,7 +8,7 @@ function Skills() {
   const skillCategories = [
     {
       title: 'Frontend',
-      skills: ['HTML/CSS', 'JavaScripts', 'React Native', 'React', 'Next.js', 'Tailwind CSS', 'Bootstraps']
+      skills: ['HTML/CSS', 'JavaScript', 'TypeScript', 'React Native', 'React', 'Next.js', 'Tailwind CSS', 'Bootstrap']
     },
     {
       title: 'Backend',
@@ -47,7 +48,7 @@ function Skills() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4, delay: 0.3 }}
       >
-        <span className="text-xl">⚡</span> Tech Stack
+        <FiZap className="w-4 h-4" /> Tech Stack
       </motion.h2>
       
       <motion.div 

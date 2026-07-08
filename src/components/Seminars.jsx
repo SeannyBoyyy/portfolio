@@ -1,5 +1,6 @@
 import { useTheme } from '../context/ThemeContext'
 import { motion } from 'framer-motion'
+import { FiAward } from 'react-icons/fi'
 
 function Seminars() {
   const { isDark } = useTheme()
@@ -35,7 +36,7 @@ function Seminars() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4, delay: 0.6 }}
       >
-        <span className="text-xl">📜</span> Seminars
+        <FiAward className="w-4 h-4" /> Seminars
       </motion.h2>
       
       <div className="space-y-3">

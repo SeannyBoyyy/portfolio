@@ -1,12 +1,12 @@
 import { useTheme } from '../context/ThemeContext'
-import { FiMail, FiGithub, FiLinkedin } from 'react-icons/fi'
+import { FiMail, FiGithub, FiLinkedin, FiSend } from 'react-icons/fi'
 import { motion } from 'framer-motion'
 
 function Contact() {
   const { isDark } = useTheme()
 
   const links = [
-    { icon: FiMail, label: 'Email', value: 'seamdesagun@gmail.com', href: 'mailto:seamdesagun@gmail.com' },
+    { icon: FiMail, label: 'Email', value: 'seanrichard1022@gmail.com', href: 'mailto:seanrichard1022@gmail.com' },
   ]
 
   const socials = [
@@ -27,7 +27,7 @@ function Contact() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4, delay: 0.7 }}
       >
-        <span className="text-xl">📧</span> Contact
+        <FiSend className="w-4 h-4" /> Contact
       </motion.h2>
       
       <div className="space-y-3">

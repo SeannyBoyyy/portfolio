@@ -28,11 +28,10 @@ function About() {
         transition={{ duration: 0.5, delay: 0.3 }}
       >
         <p>
-          I'm a BS Information Technology graduate (Lyceum of Subic Bay, April 2026) with a habit of shipping things
-          instead of leaving them as class submissions. Most of what's on this page started as a school project, but I
-          deployed it anyway and real people use it. I like finding the slow, manual part of a workflow and rebuilding
-          it to be faster, usually with AI worked in as a tool rather than a gimmick. Right now I'm looking for an
-          entry-level role where I can keep doing that on a team.
+          I'm a BS Information Technology graduate from Lyceum of Subic Bay (April 2026). I
+          build and deploy full applications end to end, from planning through to a live,
+          working product. I focus on automating slow, manual workflows, often incorporating
+          AI as part of the solution. I'm currently looking for an entry-level developer role.
         </p>
       </motion.div>
     </motion.div>

@@ -29,10 +29,10 @@ function About() {
       >
         <p>
           I'm a BS Information Technology graduate (Lyceum of Subic Bay, April 2026) with a habit of shipping things
-          instead of just prototyping them. Everything on this page is live and actually used, not a coursework
-          demo. I like finding the slow, manual part of a workflow and rebuilding it to be faster, usually with AI
-          worked in as a tool rather than a gimmick. Right now I'm looking for an entry-level role where I can keep
-          doing that on a team.
+          instead of leaving them as class submissions. Most of what's on this page started as a school project, but I
+          deployed it anyway and real people use it. I like finding the slow, manual part of a workflow and rebuilding
+          it to be faster, usually with AI worked in as a tool rather than a gimmick. Right now I'm looking for an
+          entry-level role where I can keep doing that on a team.
         </p>
       </motion.div>
     </motion.div>

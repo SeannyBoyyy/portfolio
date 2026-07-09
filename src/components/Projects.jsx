@@ -26,6 +26,14 @@ function Projects() {
       tech: ['Next.js', 'React', 'Firebase', 'Tailwind CSS', 'PayMongo'],
     },
     {
+      title: 'SeannyLog',
+      description: 'Personal gym progressive overload tracker with configurable training splits, double-progression streak detection, and a GitHub-style heatmap. Built for my own training, used every session, works offline as an installable PWA.',
+      link: 'https://seannyboyyy.github.io/SeannyLog/',
+      image: `${base}projects/seannylog.png`,
+      year: '2026',
+      tech: ['HTML/CSS/JS', 'PWA', 'Service Worker'],
+    },
+    {
       title: 'Instant Pick',
       description: 'Professional spin-the-wheel app for events and giveaways. Features 6 color themes, dark mode, sound effects, confetti, winner history, and PWA offline support.',
       link: 'https://seannyboyyy.github.io/instantpick/',
